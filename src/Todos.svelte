@@ -32,18 +32,25 @@
 </script>
 
 <style>
-    input { display: block }
+    h2{
+        font-size: 2rem;
+    }
+    ul{
+        width: 80%;
+    }
+    div{
+        display: flex;
+        width: 80%;
+    }
 </style>
 
+<h2>To Do List</h2>
+<div>
+<input bind:value={text}>
+<button class="button is-primary" on:click={add}>Add Task</button>
+</div>
 <ul>
 	{#each $todos as todo}
-
         <TodoItem {...todo} on:remove={removeItem} on:toggle={updateStatus} />
-        
 	{/each}
 </ul>
-
-
-<input bind:value={text}>
-
-<button class="button is-primary" on:click={add}>Add Task</button>

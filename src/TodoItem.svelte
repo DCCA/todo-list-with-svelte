@@ -28,9 +28,9 @@
         color: green;
     }
     li{
-      border: solid;
-      border-radius: 2rem;
-      padding: 1rem;
+      border: 1px solid;
+      border-radius: 5px;
+      padding: 0.4rem;
       margin: 0.2rem 0;
       display: flex;
       align-items: center;

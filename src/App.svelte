@@ -23,6 +23,14 @@
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
+		height: 100%;
+	}
+	div{
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+	h1{
+		font-size: 2rem;
 	}
 </style>
 
@@ -37,6 +45,10 @@
     <hr />
     <Todos uid={user.uid} />
   {:else}
+	<div>
+	<h1>Welcome to ToDoSvelter</h1>
+	<p>Log in to use the app</p>
+	</div>
     <button class="button is-primary" on:click={login}>Sign-in with Google</button>
   {/if}
 </section>
